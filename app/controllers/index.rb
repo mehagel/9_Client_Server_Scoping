@@ -1,8 +1,14 @@
+enable :sessions
+
+
+
 get '/' do
   erb :index
 end
 
 get '/skills/:skill' do
+  p params
+  @skill = params[:skill]
   erb :skills
 end
 
