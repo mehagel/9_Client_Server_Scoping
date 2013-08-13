@@ -21,6 +21,7 @@ get '/meals' do
             "Sushi",
             "Linguini",
             "Onigilli"]
+  @meal = @meals.sample          
   erb :meals
 end
 
