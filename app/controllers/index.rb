@@ -10,13 +10,9 @@ get '/skills/:skill' do
 end
 
 get '/meals' do
-
-
   erb :meals
 end
 
 get '/funky' do
   return_meal
   end
-
-
