@@ -1,4 +1,4 @@
-var meal = <%= @meal %>
+
 
 $(document).ready(function() {
   $('.awesomeness_teller').on('click', function() {
@@ -9,4 +9,9 @@ $(document).ready(function() {
   	$('#skill_holder').text('<%=@skill%>');		
   });
 
+  $('.meal_teller').on('click', function() {
+    $.get('/funky', function (data){
+        $('#meal_holder').text(data); 
+    });  
+  });
 });
